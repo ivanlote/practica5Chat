@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRACTICA 5 NPR</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="enter-user" id="enter-user">
+        <div class="form-user">
+            <div class="content-img-profile-login">
+                <img alt="" class="img-user" id="img-user-profile" src="./img/usuario.png">
+            </div>
+            <input type="file" name="img-profile-change" id="img-profile-change" class="input-file">
+            <label for="img-profile-change" class="btn-img-profile-change"><img src="./img/photo.svg" alt=""></label>
+            <input type="text" placeholder="Nombre de usuario" class="input-user" id="user" autocomplete="off">
+            <p class="message-input" id="message-input">Enter para ingresar</p>
+        </div>
+    </div>
+
+    <div id="content-menu" class="content-menu"></div>
+
+    <div class="container-chat">
+        <div class="container-usser-list">
+            <div class="title-chat">
+                <div class="content-img-profile">
+                    <img class="img-profile" id="img-profile-me" alt="">
+                </div>
+                <span id="me"></span>
+            </div>
+            <div class="content-users-list">
+                <ul class="list" id="users-list"></ul>
+            </div>
+        </div>
+        <div class="content-messages">
+            <div class="messages" id="messages-content"></div>
+            <div class="content-inputs">
+                <input type="file" name="file" id="file-message" class="input-file">
+                <label for="file-message" class="btn-file"><img src="./img/picture.svg" alt=""></label>
+                <input type="file" name="file-attached" id="file-attached" class="input-file">
+                <label for="file-attached" class="btn-file"><img src="./img/fichero.svg" alt=""></label>
+                <textarea name="" id="message" placeholder="Escriba un mensaje..." class="input-message"></textarea>
+                <button id="btnSend" class="btn btn-send"><img src="./img/paper-plane.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/validation_user.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
